@@ -71,7 +71,7 @@ try:
                     dnscach[que.rname] = {que.rtype: (que, int(time.time()) + que.ttl)}
         except OSError:
             pass
-        if time.time() - time_start > 60:
+        if time.time() - time_start > 120:
             rem = []
             for n in dnscach:
                 for t in dnscach[n]:
