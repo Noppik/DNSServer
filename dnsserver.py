@@ -75,7 +75,7 @@ try:
             rem = []
             for n in dnscach:
                 for t in dnscach[n]:
-                    _, end = dnscach[n][t]
+                    s, end = dnscach[n][t]
                     if end < int(time.time()):
                         rem.append((n, t))
             for n, t in rem:
